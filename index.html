@@ -9,6 +9,11 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/carouFredSel.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css">
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
 
@@ -35,10 +40,10 @@
 
 	<section class="top-section">
 
-				<video id="video" autoplay="autoplay" loop="loop" preload="auto">
-		<source src="video/video-bg.mp4">
-		<source src="book.webm" type="video/webm">
-	</video>
+		<video id="video" autoplay="autoplay" loop="loop" preload="auto">
+			<source src="video/video-bg.mp4">
+			<source src="book.webm" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
+		</video>
 				<div class="caption">
 					<p>NextWeb</p>
 					<p>Only best quality for clients</p>
@@ -158,7 +163,7 @@
 
 	<footer>
 		<img src="img/logo_footer.png" alt="Crafty">
-		<p class="rights">Copyright ©2016 NextWeb - All rights reserved></p>
+		<p class="rights">Copyright ©2016 NextWeb - All rights reserved</p>
 	</footer>
 
 </body>
